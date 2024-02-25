@@ -82,7 +82,7 @@ namespace Advising_Team_74
             string sems = (string)getSemester.ExecuteScalar();
             StdRegister.ExecuteNonQuery();
             conn.Close();
-            Session["StudentID"] = id1;
+            Session["StudentID"] = id1.Value;
             Session["Current_semester"] = "s24";
             Response.Redirect("mainPageStudent.aspx");       
         }
