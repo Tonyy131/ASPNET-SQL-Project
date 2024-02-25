@@ -1,0 +1,580 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFF50B3E-AB94-42A2-BDF0-D27DD10064CA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Advising_Team_74</RootNamespace>
+    <AssemblyName>Advising_Team_74</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addCourse.aspx" />
+    <Content Include="addExam.aspx" />
+    <Content Include="addSem.aspx" />
+    <Content Include="ARchA.aspx" />
+    <Content Include="ARcoA.aspx" />
+    <Content Include="ChooseStudent.aspx" />
+    <Content Include="CoursesStudent.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="css\bootstrap\mixins\_visibility.css" />
+    <Content Include="css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="css\bootstrap\_media.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DelA.aspx" />
+    <Content Include="delete.aspx" />
+    <Content Include="delete1.aspx" />
+    <Content Include="ExamsStudent.aspx" />
+    <Content Include="GPAd.aspx" />
+    <Content Include="GradStudent.aspx" />
+    <Content Include="Images\backImg.jpg" />
+    <Content Include="Images\frontImg.jpg" />
+    <Content Include="InCA.aspx" />
+    <Content Include="InstallmentStudent.aspx" />
+    <Content Include="InstructorStudent.aspx" />
+    <Content Include="issueInst.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\popper.js" />
+    <Content Include="link.aspx" />
+    <Content Include="link1.aspx" />
+    <Content Include="link2.aspx" />
+    <Content Include="mainPageAdmin.aspx" />
+    <Content Include="mainPageAdvisor.aspx" />
+    <Content Include="mainPageStudent.aspx" />
+    <Content Include="MajorA.aspx" />
+    <Content Include="MakeupStudent.aspx" />
+    <Content Include="pending.aspx" />
+    <Content Include="PenReqA.aspx" />
+    <Content Include="PreStudent.aspx" />
+    <Content Include="ReqA.aspx" />
+    <Content Include="RequestStudent.aspx" />
+    <Content Include="SlotsStudent.aspx" />
+    <Content Include="startUp.aspx" />
+    <Content Include="startUpA.aspx" />
+    <Content Include="students.aspx" />
+    <Content Include="studentsA.aspx" />
+    <Content Include="style2.css" />
+    <Content Include="style3.css" />
+    <Content Include="styles.css" />
+    <Content Include="UPDA.aspx" />
+    <Content Include="updateStd.aspx" />
+    <Content Include="viewGP.aspx" />
+    <Content Include="viewIns.aspx" />
+    <Content Include="viewPay.aspx" />
+    <Content Include="viewSem.aspx" />
+    <Content Include="viewSTD.aspx" />
+    <Content Include="viewTran.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addCourse.aspx.cs">
+      <DependentUpon>addCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addCourse.aspx.designer.cs">
+      <DependentUpon>addCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addExam.aspx.cs">
+      <DependentUpon>addExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addExam.aspx.designer.cs">
+      <DependentUpon>addExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addSem.aspx.cs">
+      <DependentUpon>addSem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addSem.aspx.designer.cs">
+      <DependentUpon>addSem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ARchA.aspx.cs">
+      <DependentUpon>ARchA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARchA.aspx.designer.cs">
+      <DependentUpon>ARchA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ARcoA.aspx.cs">
+      <DependentUpon>ARcoA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARcoA.aspx.designer.cs">
+      <DependentUpon>ARcoA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseStudent.aspx.cs">
+      <DependentUpon>ChooseStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChooseStudent.aspx.designer.cs">
+      <DependentUpon>ChooseStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoursesStudent.aspx.cs">
+      <DependentUpon>CoursesStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoursesStudent.aspx.designer.cs">
+      <DependentUpon>CoursesStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DelA.aspx.cs">
+      <DependentUpon>DelA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DelA.aspx.designer.cs">
+      <DependentUpon>DelA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete1.aspx.cs">
+      <DependentUpon>delete1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete1.aspx.designer.cs">
+      <DependentUpon>delete1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsStudent.aspx.cs">
+      <DependentUpon>ExamsStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamsStudent.aspx.designer.cs">
+      <DependentUpon>ExamsStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPAd.aspx.cs">
+      <DependentUpon>GPAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPAd.aspx.designer.cs">
+      <DependentUpon>GPAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradStudent.aspx.cs">
+      <DependentUpon>GradStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradStudent.aspx.designer.cs">
+      <DependentUpon>GradStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InCA.aspx.cs">
+      <DependentUpon>InCA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InCA.aspx.designer.cs">
+      <DependentUpon>InCA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstallmentStudent.aspx.cs">
+      <DependentUpon>InstallmentStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstallmentStudent.aspx.designer.cs">
+      <DependentUpon>InstallmentStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorStudent.aspx.cs">
+      <DependentUpon>InstructorStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorStudent.aspx.designer.cs">
+      <DependentUpon>InstructorStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="issueInst.aspx.cs">
+      <DependentUpon>issueInst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="issueInst.aspx.designer.cs">
+      <DependentUpon>issueInst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link.aspx.cs">
+      <DependentUpon>link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link.aspx.designer.cs">
+      <DependentUpon>link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link1.aspx.cs">
+      <DependentUpon>link1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link1.aspx.designer.cs">
+      <DependentUpon>link1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link2.aspx.cs">
+      <DependentUpon>link2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link2.aspx.designer.cs">
+      <DependentUpon>link2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPageAdmin.aspx.cs">
+      <DependentUpon>mainPageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPageAdmin.aspx.designer.cs">
+      <DependentUpon>mainPageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPageAdvisor.aspx.cs">
+      <DependentUpon>mainPageAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPageAdvisor.aspx.designer.cs">
+      <DependentUpon>mainPageAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPageStudent.aspx.cs">
+      <DependentUpon>mainPageStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPageStudent.aspx.designer.cs">
+      <DependentUpon>mainPageStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MajorA.aspx.cs">
+      <DependentUpon>MajorA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MajorA.aspx.designer.cs">
+      <DependentUpon>MajorA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeupStudent.aspx.cs">
+      <DependentUpon>MakeupStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeupStudent.aspx.designer.cs">
+      <DependentUpon>MakeupStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pending.aspx.cs">
+      <DependentUpon>pending.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pending.aspx.designer.cs">
+      <DependentUpon>pending.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PenReqA.aspx.cs">
+      <DependentUpon>PenReqA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PenReqA.aspx.designer.cs">
+      <DependentUpon>PenReqA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreStudent.aspx.cs">
+      <DependentUpon>PreStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreStudent.aspx.designer.cs">
+      <DependentUpon>PreStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReqA.aspx.cs">
+      <DependentUpon>ReqA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReqA.aspx.designer.cs">
+      <DependentUpon>ReqA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestStudent.aspx.cs">
+      <DependentUpon>RequestStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestStudent.aspx.designer.cs">
+      <DependentUpon>RequestStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SlotsStudent.aspx.cs">
+      <DependentUpon>SlotsStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SlotsStudent.aspx.designer.cs">
+      <DependentUpon>SlotsStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="startUp.aspx.cs">
+      <DependentUpon>startUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="startUp.aspx.designer.cs">
+      <DependentUpon>startUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="startUpA.aspx.cs">
+      <DependentUpon>startUpA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="startUpA.aspx.designer.cs">
+      <DependentUpon>startUpA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="students.aspx.cs">
+      <DependentUpon>students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students.aspx.designer.cs">
+      <DependentUpon>students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentsA.aspx.cs">
+      <DependentUpon>studentsA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentsA.aspx.designer.cs">
+      <DependentUpon>studentsA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UPDA.aspx.cs">
+      <DependentUpon>UPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UPDA.aspx.designer.cs">
+      <DependentUpon>UPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateStd.aspx.cs">
+      <DependentUpon>updateStd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateStd.aspx.designer.cs">
+      <DependentUpon>updateStd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewGP.aspx.cs">
+      <DependentUpon>viewGP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewGP.aspx.designer.cs">
+      <DependentUpon>viewGP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewIns.aspx.cs">
+      <DependentUpon>viewIns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewIns.aspx.designer.cs">
+      <DependentUpon>viewIns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewPay.aspx.cs">
+      <DependentUpon>viewPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewPay.aspx.designer.cs">
+      <DependentUpon>viewPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewSem.aspx.cs">
+      <DependentUpon>viewSem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewSem.aspx.designer.cs">
+      <DependentUpon>viewSem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewSTD.aspx.cs">
+      <DependentUpon>viewSTD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewSTD.aspx.designer.cs">
+      <DependentUpon>viewSTD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewTran.aspx.cs">
+      <DependentUpon>viewTran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewTran.aspx.designer.cs">
+      <DependentUpon>viewTran.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\bootstrap\.DS_Store" />
+    <Content Include="css\bootstrap\mixins\.DS_Store" />
+    <Content Include="fonts\.DS_Store" />
+    <Content Include="images2\.DS_Store" />
+    <Content Include="js\.DS_Store" />
+    <None Include="packages.config" />
+    <Content Include="scss\.DS_Store" />
+    <Content Include="scss\bootstrap\.DS_Store" />
+    <Content Include="scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="scss\bootstrap\bootstrap.scss" />
+    <Content Include="scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="scss\bootstrap\mixins\_float.scss" />
+    <Content Include="scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="scss\bootstrap\mixins\_image.scss" />
+    <Content Include="scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="scss\bootstrap\mixins\_size.scss" />
+    <Content Include="scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="scss\bootstrap\utilities\_align.scss" />
+    <Content Include="scss\bootstrap\utilities\_background.scss" />
+    <Content Include="scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="scss\bootstrap\utilities\_display.scss" />
+    <Content Include="scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="scss\bootstrap\utilities\_float.scss" />
+    <Content Include="scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="scss\bootstrap\utilities\_position.scss" />
+    <Content Include="scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="scss\bootstrap\utilities\_text.scss" />
+    <Content Include="scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="scss\bootstrap\_alert.scss" />
+    <Content Include="scss\bootstrap\_badge.scss" />
+    <Content Include="scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="scss\bootstrap\_button-group.scss" />
+    <Content Include="scss\bootstrap\_buttons.scss" />
+    <Content Include="scss\bootstrap\_card.scss" />
+    <Content Include="scss\bootstrap\_carousel.scss" />
+    <Content Include="scss\bootstrap\_close.scss" />
+    <Content Include="scss\bootstrap\_code.scss" />
+    <Content Include="scss\bootstrap\_custom-forms.scss" />
+    <Content Include="scss\bootstrap\_dropdown.scss" />
+    <Content Include="scss\bootstrap\_forms.scss" />
+    <Content Include="scss\bootstrap\_functions.scss" />
+    <Content Include="scss\bootstrap\_grid.scss" />
+    <Content Include="scss\bootstrap\_images.scss" />
+    <Content Include="scss\bootstrap\_input-group.scss" />
+    <Content Include="scss\bootstrap\_jumbotron.scss" />
+    <Content Include="scss\bootstrap\_list-group.scss" />
+    <Content Include="scss\bootstrap\_media.scss" />
+    <Content Include="scss\bootstrap\_mixins.scss" />
+    <Content Include="scss\bootstrap\_modal.scss" />
+    <Content Include="scss\bootstrap\_nav.scss" />
+    <Content Include="scss\bootstrap\_navbar.scss" />
+    <Content Include="scss\bootstrap\_pagination.scss" />
+    <Content Include="scss\bootstrap\_popover.scss" />
+    <Content Include="scss\bootstrap\_print.scss" />
+    <Content Include="scss\bootstrap\_progress.scss" />
+    <Content Include="scss\bootstrap\_reboot.scss" />
+    <Content Include="scss\bootstrap\_root.scss" />
+    <Content Include="scss\bootstrap\_spinners.scss" />
+    <Content Include="scss\bootstrap\_tables.scss" />
+    <Content Include="scss\bootstrap\_toasts.scss" />
+    <Content Include="scss\bootstrap\_tooltip.scss" />
+    <Content Include="scss\bootstrap\_transitions.scss" />
+    <Content Include="scss\bootstrap\_type.scss" />
+    <Content Include="scss\bootstrap\_utilities.scss" />
+    <Content Include="scss\bootstrap\_variables.scss" />
+    <Content Include="scss\style.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54628</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54628/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

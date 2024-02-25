@@ -1,0 +1,41 @@
+﻿body {
+    /* styles.css */
+    /* Sidebar styles */
+    .sidebar
+
+{
+    width: 250px;
+    background-color: #f0f0f0;
+    height: 100%; /* Adjust the height as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .sidebar ul li {
+        padding: 10px;
+    }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+            .sidebar ul li a:hover {
+                background-color: #ddd;
+            }
+
+/* Content styles */
+.content {
+    margin-left: 250px; /* Ensure content doesn't overlap the sidebar */
+    padding: 20px;
+}
+
+}
